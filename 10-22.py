@@ -64,7 +64,30 @@ str1.split('@') # ['hello world hello python']
 str1.split('')  # 报错,空分隔符
 
 # '连接符'.join(序列) 把列表拼接成字符串
+str1 = 'hello world hello python'
+list1 = str1.split(' ')
+print('～'.join(list1)) # hello～world～hello～python
 
+# 字母修改
+print(str1.title()) # 首字母大写
+print(str1.lower()) # 小写
+print(str1.upper()) # 大写
+print(str1.isupper()) # False
+str2 = 'ASDF'
+print(str2.isupper()) # True
+print(str2.islower()) # False
+
+# 案例：字符串右旋
+str1 = 'adcgef'
+# 定义右旋位数
+num = int(input('请输入旋转的位数：'))
+num = num % len(str1)
+# 取出字符
+prev_str = str1[-num:]
+last_str = str1[:-num]
+# 重新拼接
+new_str = prev_str + last_str
+print(new_str)
 
 
 
