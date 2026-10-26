@@ -63,7 +63,7 @@ list1 = ['小红', '小明', '小强']
 # list[i] 按下标修改数据
 list1[0] = '大红'
 list1[10] = '大红' # 报错，下标越界
-# reserve()反转
+# reverse()反转
 list1.reverse() # ['小强', '小明', '小红']
 print(list1)
 # sort()
