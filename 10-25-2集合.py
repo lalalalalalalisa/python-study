@@ -24,9 +24,9 @@ s1.remove('小强')
 
 # ✅统计缺失数据和
 numbers = [2, 5, 3, 7, 5, 7]
-min_num = min(numbers)
-max_num = max(numbers)
 s1 = set(numbers) # 集合没有重复数据，减少判断次数
+min_num = min(s1)
+max_num = max(s1)
 sum = 0
 for i in range(min_num + 1, max_num):
     if i not in s1:
