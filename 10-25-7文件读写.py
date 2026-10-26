@@ -40,11 +40,13 @@ while True:
 f.close()
 
 ## with open()文件读写
+# 不用再关，自己会关闭
 with open('data.txt', 'r+', encoding='utf-8') as f:
     print(f.read())
     f.write('你好世界')
 
 # ✅复制视频文件
+# 不能加encoding='utf-8'，这是二进制
 with open('aa/04-函数-基础参数汇总.mp4', 'rb') as src_f, open('aa/04-beifen.mp4', 'wb') as new_f:
     while True:
         data = src_f.read(1024)
