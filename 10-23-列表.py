@@ -86,7 +86,7 @@ for item in stu_name:
     for i in item:
         print(i)
 
-# 求相邻元素最大值
+# ✅求相邻元素最大值
 list1 = [7, 8, 9, 5, 6, 7, 2, 3]
 new_list = []
 for i in range(0, len(list1)-1):
